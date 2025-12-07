@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PohodVsesvit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script> 
+  </head>
+  <body>
+   <header>
+     <h1 class="site-title">Pohod Vsesvit</h1> </header>
+  <div class="location-search">
+    <label for="location">Введіть місто:</label>
+    <input 
+        id="location" 
+        class="location-input" 
+        type="text" 
+        placeholder="Введіть назву населеного пункту" 
+        **list="city-suggestions"**     >
+    <datalist id="city-suggestions"></datalist>
+    <div id="error-message" role="alert" aria-live="polite"></div>
+  </div>
+  <main>
+      <section class="weather-table">
+      <div class="city">
+        <h2>Чернігів</h2>
+      </div>
+        <table>
+          <caption>Прогноз погоди для міста Чернігів</caption>
+          <thead>
+            <tr>
+              <th aria-label="Характеристика"></th>
+              <th colspan="4" scope="col">25 листопада</th>
+              <th colspan="4" scope="col">26 листопада</th>
+            </tr>
+            <tr>
+              <th aria-lable="час доби"></th> <th scope="col">ніч</th>
+              <th scope="col">ранок</th>
+              <th scope="col">день</th>
+              <th scope="col">вечір</th>
+              <th scope="col">ніч</th>
+              <th scope="col">ранок</th>
+              <th scope="col">день</th>
+              <th scope="col">вечір</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">опади</th>
+                <td><img src="img/rain_icon.svg" alt="Дощ"></td>
+                <td><img src="img/rain_lightning_icon.svg" alt="Дощ з грозами"></td>
+                <td><img src="img/sun_icon.svg" alt="Сонце"></td>
+                <td><img src="img/moon_cloud_icon.svg" alt="місцями хмарно"></td>
+                <td><img src="img/moon_stars_icon.svg" alt="місячно і зоряно"></td>
+                <td><img src="img/sun_icon.svg" alt="Сонце"></td>
+                <td><img src="img/moon_cloud_icon.svg" alt="місячно і хмарно"></td>
+                <td><img src="img/moon_stars_icon.svg" alt="місячно і зоряно"></td>
+            </tr>
+            <tr>
+              <th scope="row">Хмарність %</th>
+              <td>75%</td>
+              <td>62%</td>
+              <td>8%</td>
+              <td>15%</td>
+              <td>3%</td>
+              <td>2%</td>
+              <td>25%</td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <th scope="row">Температура °C</th>
+              <td>+8°C</td>
+              <td>+13°C</td>
+              <td>+13°C</td>
+              <td>+9°C</td>
+              <td>+10°C</td>
+              <td>+11°C</td>
+              <td>+12°C</td>
+              <td>+6°C</td>
+            </tr>
+            <tr>
+              <th scope="row">Вологість %</th>
+              <td>95%</td>
+              <td>91%</td>
+              <td>83%</td>
+              <td>92%</td>
+              <td>94%</td>
+              <td>81%</td>
+              <td>78%</td>
+              <td>95%</td>
+            </tr>
+            <tr>
+              <th scope="row">Вітер м/с</th>
+              <td>8</td>
+              <td>5</td>
+              <td>6</td>
+              <td>4</td>
+              <td>5</td>
+              <td>4</td>
+              <td>2</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th scope="row">Відчуття</th>
+              <td>+1°C</td>
+              <td>+8°C</td>
+              <td>+11°C</td>
+              <td>+9°C</td>
+              <td>+9°C</td>
+              <td>+11°C</td>
+              <td>+13°C</td>
+              <td>+2°C</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>   
+    </main>
+      <footer>
+        <p>© 2025 Ю. Б. Гаврилюк. Всі права захищені.</p>
+        <div class="attribution">
+          Дані про погоду надано 
+          <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">OpenWeatherMap</a>.
+        </div>
+      </footer> 
+  </body>       
+</html>
