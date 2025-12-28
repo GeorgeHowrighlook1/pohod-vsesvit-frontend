@@ -88,13 +88,13 @@ async function fetchWeatherData(city) {
     }
 
     try {
-        const response = await fetch(BACKEND_API_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ city: city }),
-        });
+    const urlWithCity = `${BACKEND_API_URL}?city=${encodeURIComponent(city)}`;
+    const response = await fetch(urlWithCity, {
+        method: 'GET', 
+        headers: {
+            'Accept': 'application/json',
+        }
+    });
 
         if (!response.ok) {
             const errorData = await response.json().catch(() => ({ message: 'Помилка сервера' }));
