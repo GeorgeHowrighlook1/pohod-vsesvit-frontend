@@ -1,4 +1,4 @@
-const BACKEND_API_URL = 'https://pohodvsesvit.onrender.com/api/weather; 
+const BACKEND_API_URL = 'https://pohodvsesvit.onrender.com/api/weather'; 
 
 const ROW_MAP = {
     'icon': 0,
